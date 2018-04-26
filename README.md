@@ -6,7 +6,7 @@ Setup a CILAMP using USB cable instead of WiFi web page
 From terminal:
 
 ```
-$ python cilamp_cfg.py <SSID> <PASSWORD> <SYSTEMID>")
+$ python cilamp_cfg.py <SSID> <PASSWORD> <SYSTEMID>
 ```
 
 This will send configuration specified at command line
