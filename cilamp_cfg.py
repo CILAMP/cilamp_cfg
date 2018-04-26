@@ -1,12 +1,14 @@
 #!/usr/bin/python
 # coding: utf-8
-import sys
-import serial
 
+# Verify on Python3!
+import sys
 if sys.version_info[0] < 3:
     print("This script assumes Python 3. Exiting.")
     sys.exit(-1)
 
+import serial
+    
 # TODO: add support for Mac
 # TODO: .. and Windows
 # TODO: check more than default port
