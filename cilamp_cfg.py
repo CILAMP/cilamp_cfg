@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import sys
 import serial
 
@@ -14,7 +16,7 @@ def write_command(port_string, text):
     ser.baudrate = 9600
     ser.port = port_string
     ser.open()
-    values = bytearray(text)
+    values = bytearray(text.encode('utf-8'))
     ser.write(values)
     ser.close()
 
@@ -29,8 +31,8 @@ def print_manual():
 
 def print_outtro():
     print("CILAMP configured and rebooting. If not green within 30 seconds,")
-    print("check WiFi credentials - it is case sensitive and no spaces are")
-    print("allowed.")
+    print("check WiFi credentials - it is case sensitive and whitespace is")
+    print("not supported.")
 
 
 def configure_via_usb(ssid, password, systemid):
