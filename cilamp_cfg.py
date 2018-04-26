@@ -1,10 +1,12 @@
+#!/usr/bin/python
+# coding: utf-8
 import sys
 import serial
 
-
-# TODO: add support for Mac and Windows,
-#       only Ubuntu Linux supported at the moment!
-# TODO: check more than this default port
+# TODO: validate on Python3 environment
+# TODO: add support for Mac
+# TODO: .. and Windows
+# TODO: check more than default port
 
 PORT = '/dev/ttyUSB0'
 
