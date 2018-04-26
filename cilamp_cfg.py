@@ -1,5 +1,7 @@
-#!/usr/bin/python
-# coding: utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import serial
 
 # Verify on Python3!
 import sys
@@ -36,8 +38,8 @@ def print_manual():
 
 def print_outtro():
     print("CILAMP configured and rebooting. If not green within 30 seconds,")
-    print("check WiFi credentials - it is case sensitive and no spaces are")
-    print("allowed.")
+    print("check WiFi credentials - it is case sensitive and whitespace is")
+    print("not supported.")
 
 
 def configure_via_usb(ssid, password, systemid):
