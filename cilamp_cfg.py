@@ -3,7 +3,10 @@
 import sys
 import serial
 
-# TODO: validate on Python3 environment
+if sys.version_info[0] < 3:
+    print("This script assumes Python 3. Exiting.")
+    sys.exit(-1)
+
 # TODO: add support for Mac
 # TODO: .. and Windows
 # TODO: check more than default port
