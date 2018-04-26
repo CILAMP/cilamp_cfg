@@ -1,6 +1,6 @@
 # CILAMP configuration script
 
-Setup a CILAMP using USB cable instead of WiFi web page. This is useful for setting up 10+ units quickly, or if you have severe a WiFi congestion environment.
+Setup a CILAMP using USB cable instead of WiFi web page. This is useful for setting up 10+ units quickly, or if you are in a severy crowded WiFi environment making the WiFi setup page unreliable.
 
 # Preconditions
 
