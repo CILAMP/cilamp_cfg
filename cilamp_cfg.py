@@ -14,7 +14,7 @@ def write_command(port_string, text):
     ser.baudrate = 9600
     ser.port = port_string
     ser.open()
-    values = bytearray(text)
+    values = bytearray(text.encode('utf-8'))
     ser.write(values)
     ser.close()
 
