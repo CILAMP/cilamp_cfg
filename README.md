@@ -1,5 +1,19 @@
-# cilamp_cfg
+# CILAMP configuration script
+
 Setup a CILAMP using USB cable instead of WiFi web page
+
+
+# Preconditions
+
+This script is written for Python3 and assumes /dev/ttyUSB0 is the name of the serial port. This is the common case for Ubuntu Linux.
+
+
+# Installation
+
+Clone this repo and then:
+
+    $ pip install -r requirements.txt
+    
 
 # Usage
 
