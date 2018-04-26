@@ -7,7 +7,7 @@ Setup a CILAMP using USB cable instead of WiFi web page. This is useful for sett
 
 This script is written for Python3 and assumes /dev/ttyUSB0 is the name of the serial port. This is the common case for Ubuntu Linux.
 
-Your user needs to be in the 'dialout' group, this is achieved with this command:
+Your user needs to be in the 'dialout' group, which is achived via this command:
 
    $ sudo adduser \`whoami\` dialout
 
