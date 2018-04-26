@@ -3,10 +3,17 @@
 import sys
 import serial
 
+# Verify on Python3!
+import sys
+if sys.version_info[0] < 3:
+    print("This script assumes Python 3. Exiting.")
+    sys.exit(-1)
 
-# TODO: add support for Mac and Windows,
-#       only Ubuntu Linux supported at the moment!
-# TODO: check more than this default port
+import serial
+    
+# TODO: add support for Mac
+# TODO: .. and Windows
+# TODO: check more than default port
 
 PORT = '/dev/ttyUSB0'
 
