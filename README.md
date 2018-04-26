@@ -2,14 +2,19 @@
 
 Setup a CILAMP using USB cable instead of WiFi web page. This is useful for setting up 10+ units quickly, or if you are in a severy crowded WiFi environment making the WiFi setup page unreliable.
 
-# Preconditions
+
+# Preconditions - Ubuntu Linux
 
 This script is written for Python3 and assumes /dev/ttyUSB0 is the name of the serial port. This is the common case for Ubuntu Linux.
+
+Your user needs to be in the 'dialout' group, this is achieved with this command:
+
+   $ sudo adduser `whoami` dialout
 
 
 # Installation
 
-Clone this repo and then:
+Clone this repo and issue:
 
     $ pip install -r requirements.txt
     
@@ -18,11 +23,11 @@ Clone this repo and then:
 
 From terminal:
 
-```
-$ python cilamp_cfg.py <SSID> <PASSWORD> <SYSTEMID>
-```
+    $ python cilamp_cfg.py <SSID> <PASSWORD> <SYSTEMID>
 
-This will send configuration specified at command line
-to CILAMP connected to port /dev/ttyUSB0.
-This will save credentials SSID+PASSWORD and systemid
-on the device and reboot it.
+Sends configuration specified at command line to CILAMP connected to port /dev/ttyUSB0.
+This saves credentials SSID+PASSWORD and systemid on the device, and reboot it.
+
+The unit should then turn green within 30 seconds. If not, you might have put the wrong
+credentials on the command line - try again.
+
