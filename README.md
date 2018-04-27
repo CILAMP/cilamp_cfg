@@ -9,11 +9,11 @@ This script is written for Python3 and assumes /dev/ttyUSB0 is the name of the s
 
 Your user needs to be in the 'dialout' group, which is achieved via this command:
 
-    `$ sudo adduser $(whoami) dialout`
+    $ sudo adduser $(whoami) dialout
 
 In order to avoid having to login-logout for the changes to take effect, you can use `su` to get a shell with the new group active
 
-    `$ su - $(whoami)`
+    $ su - $(whoami)
 
 
 # Installation
