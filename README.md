@@ -11,7 +11,7 @@ Your user needs to be in the 'dialout' group, which is achieved via this command
 
     $ sudo adduser $(whoami) dialout
 
-In order to avoid having to login-logout for the changes to take effect, you can use `su` to get a shell with the new group active
+In order to avoid having to login-logout for the changes to take effect, you can use `su` to get a shell with the new group active:
 
     $ su - $(whoami)
 
